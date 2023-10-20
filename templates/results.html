@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESG Analysis Results</title>
+    <link rel="stylesheet" type="text/css" href="/Users/tovare/testingESGscrape/templates/results.css">
+</head>
+
+<body>
+    <h1>ESG Analysis Results</h1>
+    <p>Uploaded PDF: <a href="{{ pdf_path }}" target="_blank">{{ pdf_path }}</a></p>
+
+    <h2>Environment Keywords:</h2>
+    <img src="{{ url_for('static', filename='environment_chart.png') }}" alt="Environment Keywords Chart">
+
+    <h2>Social Keywords:</h2>
+    <img src="{{ url_for('static', filename='social_chart.png') }}" alt="Social Keywords Chart">
+
+    <h2>Governance Keywords:</h2>
+    <img src="{{ url_for('static', filename='governance_chart.png') }}" alt="Governance Keywords Chart">
+</body>
+
+</html>

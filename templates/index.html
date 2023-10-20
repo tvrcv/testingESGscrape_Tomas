@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF Analysis</title>
+    <link rel="stylesheet" type="text/css" href="/Users/tovare/testingESGscrape/templates/index.css">
+</head>
+
+<body>
+    <h1>Upload a PDF File for ESG Analysis</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf">
+        <button type="submit">Upload and Analyze</button>
+    </form>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+
+</html>
